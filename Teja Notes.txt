@@ -1,0 +1,34 @@
+Jenikin-03
+First we need to setup jenikin and we should activate the jenikin
+*Copy the public ip address and paste it in chrome with 8080(port number).
+*And need to sign in jenikin with user name and password.
+Note Tip for not to create jenikin everday  : select instance and select action option and we can see image and templated and select the image and click create image and give discrption and if we got ami we can see the image.
+*Click new item and give job name and selct free style and click ok.
+
+						*Build theory periodically*
+
+*Build theory periodically-Here we can schedule the build it can be done automatically no need of us.
+*And we give time by checking the time in cron tab guru
+  - * * * * *{everymin ehour emonth edaymonth edayweek}-This is for everymin built.
+*And incase we want to stop we should remove that star configuration.
+						
+						*GITHUB Hook trigger for GITScm polling*
+*It is used for webhooks
+*Webhooks we used for when devloper writes code and commit and it should be commited at anytime so we use Webhook.
+
+						*PollScm*
+
+*It is also similar to PollScm but here developer commits only in that particular time only built takes place automatically.And its usefull only for source management.
+
+						*Buildstep*
+
+-Build shell : Here we can create a file using touch command and you can see that file in instance.
+		   Here we can keep data in this also by using command eco 'matter' >file name and later we should click built now
+               Here we can create folder also. 
+
+ 						*Master and salve concept*
+
+*Slave is nothing but clientinstance and it should we create with keypair and with pem.
+*We should install java amazon-linux-extra install java-openjdk11 -y{To install java}
+*And later go to jenikin and click manage jenikin and click setup an agent and we should give name and we should create and we should give description and we should selct 3 executives and do you to high executives build will be done
+ fastly and parallel builds will be taken.
